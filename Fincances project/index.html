@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <nav class="heading">Salary Calculator</nav>
+
+    <div class="selection-card">
+      <div class="selection-info">
+        <form onsubmit="calculate()">
+          <div class="input-container">
+            <input
+              type="text"
+              id="SalaryAmount"
+              autocomplete="off"
+              class="textBox"
+              required=""
+            />
+            <label>$ amount</label>
+          </div>
+
+          <div class="per-text">per</div>
+          <select name="SalaryRate" id="SalaryRate">
+            <option value="hour">Hour</option>
+            <option value="day">Day</option>
+            <option value="week">Week</option>
+            <option value="bi-week">Bi-Week</option>
+            <option value="month">Month</option>
+            <option value="bi-month">Bi-Month</option>
+            <option value="year">Year</option>
+          </select>
+          <br />
+          <input type="submit" value="Calculate" class="button" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
