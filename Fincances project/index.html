@@ -10,33 +10,37 @@
   </head>
   <body>
     <nav class="heading">Salary Calculator</nav>
+    <div class="card-bg">
+      <div class="card">
+        <form onsubmit="calculate()" class="form">
+          <div class="padding">
+            <h1>Values</h1>
+            <div class="input-container">
+              <input
+                type="text"
+                id="SalaryAmount"
+                autocomplete="off"
+                class="textBox"
+                required=""
+              />
+              <label>Amount</label>
 
-    <div class="selection-card">
-      <div class="selection-info">
-        <form onsubmit="calculate()">
-          <div class="input-container">
-            <input
-              type="text"
-              id="SalaryAmount"
-              autocomplete="off"
-              class="textBox"
-              required=""
-            />
-            <label>$ amount</label>
+              <div class="per-text">per</div>
+              <select name="SalaryRate" id="SalaryRate" class="salary-rate">
+                <option value="hour">Hour</option>
+                <option value="day">Day</option>
+                <option value="week">Week</option>
+                <option value="bi-week">Bi-Week</option>
+                <option value="month">Month</option>
+                <option value="bi-month">Bi-Month</option>
+                <option value="year">Year</option>
+              </select>
+            </div>
+            <br />
           </div>
-
-          <div class="per-text">per</div>
-          <select name="SalaryRate" id="SalaryRate">
-            <option value="hour">Hour</option>
-            <option value="day">Day</option>
-            <option value="week">Week</option>
-            <option value="bi-week">Bi-Week</option>
-            <option value="month">Month</option>
-            <option value="bi-month">Bi-Month</option>
-            <option value="year">Year</option>
-          </select>
-          <br />
-          <input type="submit" value="Calculate" class="button" />
+          <div class="center">
+            <input type="submit" value="Calculate" class="button" />
+          </div>
         </form>
       </div>
     </div>
