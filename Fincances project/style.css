@@ -10,6 +10,22 @@ body
     justify-content: space-evenly;
 }
 
+h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 20px;
+}
+
+p
+{
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
 nav {
     margin: 0, 0, 0, 0;
     background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
@@ -91,6 +107,12 @@ nav {
     right: 10px;
     border: #181818 1px solid;
     height: 66px;
+}
+
+.left
+{
+    left: 10px;
+    width: fit-content;
 }
 
 .center
