@@ -84,6 +84,15 @@ nav {
 
 }
 
+.heading button
+{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    border: #181818 1px solid;
+    height: 66px;
+}
+
 .center
 {
     width: auto;
@@ -260,7 +269,7 @@ ul{
 
 }
 
-ul li {
+.names li {
     flex: 1;
     /* Distribute the available space evenly between list items */
     display: flex;
@@ -275,3 +284,28 @@ ul li {
 {
     border: none;
 }
+
+table
+{
+    font-size: 25px;
+    width: 100%;
+    padding: 15px;
+}
+
+tr
+{
+    height: 83.63px;
+    
+}
+
+tr td
+{
+    padding: 0;
+    border-bottom: 1px solid#fff;
+}
+
+.values
+{
+    text-align: right;
+}
+
