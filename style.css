@@ -1,0 +1,332 @@
+body
+{
+    margin: 0px;
+    background-color: #212121;
+}
+
+.space-evenly 
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 20px;
+}
+
+p
+{
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+nav {
+    margin: 0, 0, 0, 0;
+    background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    border: 3px;
+    border-bottom: solid black 5px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-bg
+{
+    position: absolute;
+    height: 600px;
+    width: 400px;
+    background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    padding: 5px 5px;
+    border-radius: 1rem;
+    left: 150px;
+    top: 120px;
+}
+
+.card 
+{
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    border-radius: 1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.padding
+{
+    padding-top: 10px;
+    padding-left: 20px;
+    margin: 0;;
+}
+
+/* CSS */
+.button {
+    align-items: center;
+    background-clip: padding-box;
+    /*background-color: #e74c3c;*/
+    background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    border: none;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+
+    position:  relative;
+    font-family: system-ui, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: absolute;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+    bottom: 20px;
+
+}
+
+.heading button
+{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    border: #181818 1px solid;
+    height: 66px;
+}
+
+.left
+{
+    left: 10px;
+    width: fit-content;
+}
+
+.center
+{
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.per-text
+{
+    font-size: 20px;
+    display: inline;
+    margin: 10px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+}
+
+.button:active {
+    background-color: #e74c3c;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+
+.input-container {
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    margin-right: 0;
+    width: 100%;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100px;
+    padding: 8px 0 5px 3px;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e74c3c;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -16px;
+    font-size: 16px;
+
+}
+
+.other-info input {
+    width: 95%;
+    font-size: 25px;
+}
+
+.other-info label
+{
+    font-size: 25px;
+}
+
+.other-info input:focus~label,
+.other-info input:valid~label {
+    top: -20px;
+    font-size: 20px;
+
+}
+
+.other-info2
+{
+    margin-top: 75px;
+}
+.other-info2 input {
+    width: 95%;
+    font-size: 25px;
+}
+
+.other-info2 label {
+    font-size: 25px;
+}
+
+.other-info2 input:focus~label,
+.other-info2 input:valid~label {
+    top: -20px;
+    font-size: 20px;
+
+}
+
+.salary-rate
+{
+    width: 200px;
+    height: 25px;
+    color: white;
+    background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    background-color: #ea5358;
+    border: none;
+    border-radius: .25rem;
+    text-align: center;
+    font-size: 16px;
+    transition: all 250ms;
+}
+
+.salary-rate:hover {
+    transform: translateY(-1px);
+}
+
+
+
+
+/* RESULTS CSS*/
+
+
+
+.results-bg
+{
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    padding: 5px 5px;
+    border-radius: 1rem;
+    right: 150px;
+    top: 120px;
+}
+
+.results
+{
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    border-radius: 1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* To space items evenly vertically */
+    /* To vertically center the text */
+    height: 519.79px;
+    /* Set a specific height for the list container */
+    list-style: none;
+    /* Remove default list styles */
+    padding: 0;
+    padding: 0px 20px;
+    margin: 0;
+
+}
+
+.names li {
+    flex: 1;
+    /* Distribute the available space evenly between list items */
+    display: flex;
+    align-items: center;
+    /* Vertically center the text within each item */
+    padding: 10px;
+    /* Optional: Add a border for visual clarity */
+    border-bottom: 1px solid#fff;
+}
+
+.no-border
+{
+    border: none;
+}
+
+table
+{
+    font-size: 25px;
+    width: 100%;
+    padding: 15px;
+}
+
+tr
+{
+    height: 83.63px;
+    
+}
+
+tr td
+{
+    padding: 0;
+    border-bottom: 1px solid#fff;
+}
+
+.values
+{
+    text-align: right;
+}
