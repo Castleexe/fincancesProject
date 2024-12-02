@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <nav class="heading">Salary Calculator
+    <form action="info.html">
+      <button class="button">More Info</button>
+    </form>
+    </nav>
+    <div class="space-evenly">
+      <div class="card-bg">
+        <div class="card">
+          <form class="form" id="form" onsubmit=" return calculate()">
+            <div class="padding">
+              <h1>Values</h1>
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="SalaryAmount"
+                  autocomplete="off"
+                  class="textBox"
+                  required=""
+                />
+                <label>Amount</label>
+
+                <div class="per-text">per</div>
+                <select name="SalaryRate" id="SalaryRate" class="salary-rate">
+                  <option value="hour">Hour</option>
+                  <option value="day">Day</option>
+                  <option value="week">Week</option>
+                  <option value="bi-week">Bi-Week</option>
+                  <option value="month">Month</option>
+                  <option value="year">Year</option>
+                </select>
+              </div>
+              <br />
+
+              <div class="input-container">
+                <div class="other-info">
+                  <input
+                    type="text"
+                    id="hoursPerWeek"
+                    autocomplete="off"
+                    class="textBox2"
+                    required=""
+                  />
+                  <label>Hours per week</label>
+                </div>
+              </div>
+
+              <div class="input-container">
+                <div class="other-info2">
+                  <input
+                    type="text"
+                    id="daysPerWeek"
+                    autocomplete="off"
+                    class="textBox2"
+                    required=""
+                  />
+                  <label>Days per week</label>
+                </div>
+              </div>
+            </div>
+            <div class="center">
+              <button class="button" id="button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="results-bg">
+        <div class="results">
+          <div class="center"><h1>Results</h1></div>
+          <div class="info">
+            <!-- 
+            <ul class="names">
+                <li>Hourly</li>
+                <li>Daily</li>
+                <li>Weekly</li>
+                <li>Bi-weekly</li>
+                <li>Monthly</li>
+                <li class="no-border">Yearly</li>
+            </ul>
+              --> 
+            <table>
+              <tr>
+                <td>Hourly</td>
+                <td class="values" id="hourlyValue">0</td>
+              </tr>
+              <tr>
+                <td>Daily</td>
+                <td class="values" id="dailyValue">0</td>
+              </tr>
+              <tr>
+                <td>Weekly</td>
+                <td class="values" id="weeklyValue">0</td>
+              </tr>
+              <tr>
+                <td>Bi-Weekly</td>
+                <td class="values" id="biWeeklyValue">0</td>
+              </tr>
+              <tr>
+                <td>Monthly</td>
+                <td class="values" id="monthlyValue">0</td>
+              </tr>
+              <tr>
+                <td class="no-border">Yearly</td>
+                <td class="values no-border" id="yearlyValue">0</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
